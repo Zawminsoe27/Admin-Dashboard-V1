@@ -460,5 +460,31 @@ main .recent-orders a {
   border-radius: 50%;
   display: flex;
   background-color: var(--color-primary);
-  
 }
+.right .sales-analytics .item.offline .icon {
+  background-color: var(--color-danger);
+}
+.right .sales-analytics .item.customer .icon {
+  background-color: var(--color-success);
+}
+
+.right .sales-analytics .add-product {
+  background-color: transparent;
+  border: 2px dashed var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right .sales-analytics .add-product div {
+  display: flex;
+  justify-content: center;
+
+  gap: 0.6rem;
+  align-items: center;
+  padding: 5px 10px;
+}
+.right .sales-analytics .add-product:hover {
+  box-shadow: 0 0 10px rgba(4, 116, 213, 0.7);
+}
+
+

@@ -1,0 +1,48 @@
+/* media queries   */
+
+@media screen and (width <= 1200px) {
+	.container {
+	  width: 94%;
+	  grid-template-columns: 7rem auto 23rem;
+	}
+  
+	aside .logo h2 {
+	  display: none;
+	}
+	aside .sidebar h3 {
+	  display: none;
+	}
+  
+	aside .sidebar a {
+	  width: 5.8rem;
+	}
+	aside .sidebar a:last-child {
+	  position: relative;
+	  margin-top: 1.8rem;
+	}
+	main .insights {
+	  grid-template-columns: 1fr;
+	  gap: 0;
+	  width: 99%;
+	  margin: 0 auto;
+	}
+	main .recent-orders {
+	  width: 90%;
+	  position: absolute;
+	  left: 50%;
+	  transform: translateX(-50%);
+	}
+	main .recent-orders table {
+	  max-width: 85%;
+	  margin: 10px auto;
+	}
+	main table thead tr th:last-child,
+	main table thead tr th:first-child {
+	  display: none;
+	}
+	main table tbody tr td:last-child,
+	main table tbody tr td:first-child {
+	  display: none;
+	}
+  }
+  
