@@ -1,18 +1,36 @@
 @media screen and (width<= 768px) {
   .container {
     width: 100%;
+    grid-template-columns: 1fr;
+  }
+  aside .close {
+    display: block;
+    position: absolute;
+    margin-top: 90px;
+    right: 0;
+    font-size: 8px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
   }
   aside {
     position: fixed;
-    left: 0;
+    left: -100%;
+    width: 18em;
     background-color: var(--color-white);
-    width: 18rem;
     z-index: 3;
     box-shadow: 1rem 3rem 4rem var(--color-light);
     height: 100vh;
     padding-right: var(--card-padding);
     display: none;
+    transition: all 1s ease;
+    animation: showSidebar 0.5s ease forwards;
   }
+  @keyframes showSidebar {
+    to {
+      left: 0;
+    }
+  }
+
   aside .logo {
     margin-left: 1rem;
   }
@@ -30,10 +48,6 @@
   aside .sidebar a:last-child {
     position: absolute;
     bottom: 5rem;
-  }
-  aside .close {
-    display: inline-block;
-    cursor: pointer;
   }
   main {
     margin-top: 8rem;
@@ -58,6 +72,24 @@
     align-items: center;
     padding: 0 0.8rem;
     height: 4.6rem;
-	
+    background-color: white;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 3rem 2rem var(--color-light);
+  }
+  .right .top .theme-toggle {
+    width: 4.4rem;
+    position: absolute;
+    left: 75%;
+  }
+  .profile .info {
+    display: none;
+  }
+  .right .top button {
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    left: 1rem;
+    position: absolute;
   }
 }
