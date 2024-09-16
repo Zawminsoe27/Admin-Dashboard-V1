@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@material-design-icons/font": "^0.14.13"
+    "@material-design-icons/font": "^0.14.13",
+    "bootstrap": "^5.3.3"
   }
 }
