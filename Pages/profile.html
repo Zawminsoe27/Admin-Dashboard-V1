@@ -1,47 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link
-      rel="stylesheet"
-      href="../node_modules/@material-design-icons/font/index.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../profile.css" />
-  </head>
-  <body class="container-fluid p-0 m-0">
-    <div class="profileContainer">
-      <!-- header  -->
-      <div
-        class="profileHeader profileNav w-100 d-flex justify-content-between bg-primary"
-      >
-        <div class="button px-2 d-flex align-items-center">
-          <a
-            href="../index.html"
-            class="btn text-light d-flex align-items-center"
-          >
-            <i class="material-icons">undo</i>
-          </a>
-        </div>
-        <div>
-          <h1 class="text-light">Profile</h1>
-        </div>
-        <div class="theme-toggle">
-          <button class="themeToggleBtn btn text-light">
-            <i class="material-icons togglerIcon">light_mode</i>
-          </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="../node_modules/@material-design-icons/font/index.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../profile.css" />
+</head>
+
+<body class="container-fluid p-0 m-0">
+  <div class="profileContainer">
+    <!-- header  -->
+    <div class="profileHeader profileNav w-100 d-flex justify-content-between bg-secondary">
+      <div class="button px-2 d-flex align-items-center">
+        <a href="../index.html" class="btn text-light d-flex align-items-center">
+          <i class="material-icons">undo</i>
+        </a>
+      </div>
+      <div>
+        <h1 class="text-light">Profile</h1>
+      </div>
+      <div class="theme-toggle">
+        <button class="themeToggleBtn btn text-light">
+          <i class="material-icons togglerIcon">light_mode</i>
+        </button>
+      </div>
+    </div>
+    <!-- end of header  -->
+    <div class="profileBody bg-light w-100 h-100">
+      <div class="profileHeaderSection bg-secondary pt-3">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <img src="../images/profile-1.jpg" alt="" class="img img-thumbnail rounded-circle" />
+          <h1 class="text-light">Daniel</h1>
+          <p class="text-light">daniel525@gmail.com</p>
+          <div class="mb-4 w-25 d-flex justify-content-center">
+            <button class="btn btn-primary rounded-2 mx-3">
+              Edit profile
+            </button>
+            <button class="btn btn-primary rounded-2 mx-3">Setting</button>
+          </div>
         </div>
       </div>
-      <!-- end of header  -->
-      <div class="profileBody bg-light w-100 h-100">
-        
+      <div class="profileBodySection row">
+        <div class="skillContainer">
+          <h1 class="text-center">Skills</h1>
+
+          <div class="d-flex flex-row  justify-content-around">
+            <div class="d-flex align-items-center ">
+              <h5>HTML :</h5>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+            </div>
+            <div class="d-flex align-items-center">
+              <h5>CSS :</h5>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+            </div>
+            <div class="d-flex align-items-center">
+              <h5>REACT :</h5>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+            </div>
+            <div class="d-flex align-items-center">
+              <h5>JS :</h5>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+              <i class="material-icons text-warning">star</i>
+            </div>
+          </div>
+        </div>
+        <div class="aboutContainer col-lg-6 col-sm-12 px-5">
+          <h1>About Me</h1>
+          <div>
+            <p>Daniel</p>
+            <p>Admin</p>
+            <p>daniel556@gmail.com</p>
+            <p>+123,456,789</p>
+            <p>no.124, example street</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h1>services</h1>
+        </div>
+
       </div>
     </div>
     <script src="../profile.js"></script>
-  </body>
+</body>
+
 </html>
